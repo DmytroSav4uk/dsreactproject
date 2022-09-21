@@ -1,0 +1,29 @@
+.user {
+    border: 1px solid black;
+    width: 35%;
+    text-align: center;
+}
+
+.users{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.buttons > button{
+    margin: 10px;
+}
+
+
+.inputs{
+    display: flex;
+    justify-content: center;
+}
+
+
+.inputs input{
+
+    width: 221px;
+    height: 100%;
+
+}

@@ -2,27 +2,25 @@ import css from './User.module.css'
 import {userService} from "../Services/User.service";
 
 
-
-const User = ({user,setUser}) => {
+const User = ({user, setUser}) => {
     const {id, name, username, email} = user;
     const deleteUser = async () => {
         await userService.deleteById(id)
-        setUser(user =>{
-            const index = user.findIndex(value => value.id === id);
-if (index!== -1){
-            user.splice(index ,1)
-}
-            return[...user]
+        setUser(user => {
+                const index = user.findIndex(value => value.id === id);
+                if (index !== -1) {
+                    user.splice(index, 1)
+                }
+                return [...user]
             }
-        )}
-    const updateUser = () =>{
-
-
-console.log(id)
+        )
     }
 
 
-
+    const updateUser = async () => {
+        await userService.updateById(id, user)
+        console.log(id)
+    }
 
     return (
         <div className={css.user}>

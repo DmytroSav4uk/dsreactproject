@@ -22,8 +22,8 @@ const {data} = await userService.create(user)
             <input type="text" placeholder={'username'} {...register('username')}/>
             {errors.username && <span>{errors.username.message}</span>}
             <input type="text" placeholder={'email'} {...register('email')}/>
-            {errors.email && <span>{errors.email.message}</span>}
-            <button disabled={!isValid}>Save and add</button>
+            {errors.email && <span>{'email example: user@gmail.com'}</span>}
+            <button  disabled={!isValid}>Save and add</button>
 </form>)}
 
 export {UserForm};

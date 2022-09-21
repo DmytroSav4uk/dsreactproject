@@ -1,6 +1,5 @@
 import {User} from "./User";
 import {useEffect, useState} from "react";
-import {getUsers} from "../Services/Axios.users.service";
 import css from './User.module.css'
 import {UserForm} from "./UserForm";
 import {userService} from "../Services/User.service";

@@ -1,21 +1,8 @@
-import {Users} from "./Users/Users";
-
-import {Comments} from "./Comments/Comments";
-
-
+import {Cars} from "./Cars/Cars";
 
 function App() {
   return (
-
-//helol
       <div>
-
-<Users/>
-<Comments/>
-
-      </div>
-
-
-  )
-}
+<Cars/>
+      </div>)}
 export default App;

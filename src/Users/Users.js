@@ -1,10 +1,10 @@
 import {useEffect, useState} from "react";
-import css from '../Css/components.module.css'
 
-import {UserForm} from "./UserForm";
-import {userService} from "../Services/User.service";
 import {User} from "./User"
+import {UserForm} from "./UserForm";
 
+import {userService} from "../Services/User.service";
+import css from '../Css/components.module.css'
 
 const Users = () => {
     let [users, setUsers] = useState([]);
@@ -15,7 +15,6 @@ const Users = () => {
     }, [])
 
     return (
-
         <div>
             <div className={css.inputs}>
                 <UserForm setUsers={setUsers} userForUpdate={userForUpdate} setUserForUpdate={setUserForUpdate}/>

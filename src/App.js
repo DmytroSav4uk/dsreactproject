@@ -2,20 +2,10 @@ import {Users} from "./Users/Users";
 
 import {Comments} from "./Comments/Comments";
 
-
-
 function App() {
   return (
-
-
       <div>
-
 <Users/>
 <Comments/>
-
-      </div>
-
-
-  )
-}
+      </div>)}
 export default App;

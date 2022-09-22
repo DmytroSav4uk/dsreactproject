@@ -4,7 +4,6 @@ import css from "../Css/components.module.css"
 const Comment = ({comment, setComments,setCommentForUpdate}) => {
     const {id, name, email, body} = comment;
 
-
     const deleteComment = async () => {
         await commentService.deleteById(id)
         setComments(comments => {

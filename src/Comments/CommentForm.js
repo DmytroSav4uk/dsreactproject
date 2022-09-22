@@ -5,8 +5,6 @@ import {useEffect} from "react";
 import {commentValidator} from "../Validators/Comment.validator";
 import {commentService} from "../Services/Comment.service";
 
-
-
 const CommentForm = ({setComments, commentForUpdate, setCommentForUpdate}) =>{
     const {register, handleSubmit, reset ,formState:{errors, isValid},setValue} = useForm({
         resolver:joiResolver(commentValidator),

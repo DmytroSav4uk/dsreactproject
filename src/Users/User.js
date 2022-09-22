@@ -4,7 +4,6 @@ import {userService} from "../Services/User.service";
 const User = ({user, setUsers,setUserForUpdate}) => {
     const {id, name, username, email} = user;
 
-
     const deleteUser = async () => {
         await userService.deleteById(id)
         setUsers(users => {

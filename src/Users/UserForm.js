@@ -5,8 +5,6 @@ import {useEffect} from "react";
 import {userValidator} from "../Validators/User.validator";
 import {userService} from "../Services/User.service";
 
-
-
 const UserForm = ({setUsers, userForUpdate, setUserForUpdate}) =>{
 const {register, handleSubmit, reset ,formState:{errors, isValid},setValue} = useForm({
     resolver:joiResolver(userValidator),
@@ -35,9 +33,10 @@ const {register, handleSubmit, reset ,formState:{errors, isValid},setValue} = us
            const {data} = await userService.create(user);
            setUsers(users => [...users, data])
        }
-
        reset()
     }
+
+
     return(
         <form onSubmit={handleSubmit(submit)}>
             <input type="text" placeholder={'name'} {...register('name')}/>

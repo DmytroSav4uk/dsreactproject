@@ -1,30 +1,31 @@
 import {useEffect, useState} from "react";
-import css from './User.module.css'
+import css from '../Css/components.module.css'
+
 import {UserForm} from "./UserForm";
 import {userService} from "../Services/User.service";
 import {User} from "./User"
 
 
-function Users() {
+const Users = () => {
     let [users, setUsers] = useState([]);
+    let [userForUpdate, setUserForUpdate] = useState(null)
 
     useEffect(() => {
         userService.getAll().then(({data}) => setUsers(data))
-
     }, [])
 
     return (
 
         <div>
+            <div className={css.inputs}>
+                <UserForm setUsers={setUsers} userForUpdate={userForUpdate} setUserForUpdate={setUserForUpdate}/>
+            </div>
 
-<div className={css.inputs}>
-            <UserForm setUsers={setUsers}/>
-</div>
-            <hr/>
-            <div className={css.users}>
-                {users.map(user=><User key = {user.name}  user={user} setUser={setUsers}/>)}
+            <div className={css.cards}>
+                {users.map(user => <User key={user.id} user={user} setUsers={setUsers} setUserForUpdate={setUserForUpdate}
+                />)}
             </div>
         </div>)
-}
+};
 
-export default Users;
+export {Users};

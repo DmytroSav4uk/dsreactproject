@@ -1,4 +1,7 @@
-import Users from "./Users/Users";
+import {Users} from "./Users/Users";
+
+import {Comments} from "./Comments/Comments";
+import {Cars} from "./Cars/Cars";
 
 
 function App() {
@@ -7,8 +10,9 @@ function App() {
 
       <div>
 
-<Users/>
-
+{/*<Users/>*/}
+{/*<Comments/>*/}
+          <Cars/>
       </div>
 
 

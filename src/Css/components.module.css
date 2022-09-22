@@ -1,0 +1,66 @@
+.card {
+    border: 1px solid black;
+    width: 20%;
+    text-align: center;
+    transition: ease-out 0.3s;
+    margin: 20px;
+
+}
+.card:hover{
+    border: none;
+    scale: 120%;
+    border-radius: 20px;
+    background: #c0c0fc;
+}
+
+.cards{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttons > button{
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    background: #8e8ec5;
+    transition: ease-out 0.1s;
+}
+
+.buttons > button:hover{
+    scale: 120%;
+}
+
+
+.inputs{
+    background: #c0c0fc;
+    display: flex;
+    justify-content: center;
+
+}
+
+.inputs input{
+    background: none;
+    text-align: center;
+}
+
+.inputs form{
+    color: black;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.inputs input{
+
+    width: 554px;
+    height: 100%;
+    font-size: 20px;
+
+}
+
+span{
+    background: red;
+    color: yellow;
+}

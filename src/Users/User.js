@@ -1,7 +1,6 @@
 import css from './User.module.css'
 import {userService} from "../Services/User.service";
 
-
 const User = ({user, setUser}) => {
     const {id, name, username, email} = user;
     const deleteUser = async () => {
@@ -15,7 +14,6 @@ const User = ({user, setUser}) => {
             }
         )
     }
-
 
     const updateUser = async () => {
         await userService.updateById(id, user)
@@ -35,7 +33,5 @@ const User = ({user, setUser}) => {
             </div>
         </div>
     );
-
-
-}
+};
 export {User};

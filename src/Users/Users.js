@@ -1,8 +1,8 @@
-import {User} from "./User";
 import {useEffect, useState} from "react";
 import css from './User.module.css'
 import {UserForm} from "./UserForm";
 import {userService} from "../Services/User.service";
+import {User} from "./User"
 
 
 function Users() {
@@ -22,7 +22,7 @@ function Users() {
 </div>
             <hr/>
             <div className={css.users}>
-                {users.map(user=><User key = {user.id} user={user} setUser={setUsers}/>)}
+                {users.map(user=><User key = {user.name}  user={user} setUser={setUsers}/>)}
             </div>
         </div>)
 }

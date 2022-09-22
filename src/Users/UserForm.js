@@ -10,9 +10,15 @@ const {register, handleSubmit, reset ,formState:{errors, isValid},setValue} = us
     mode:'all'
 });
    const submit = async (user) => {
-const {data} = await userService.create(user)
-       //console.log(data)
-       setUsers(users =>[...users,data])
+       if(user.id > 0)
+           user.updateUser();
+       else
+       {
+           const {data} = await userService.create(user)
+           //console.log(data)
+           setUsers(users =>[...users,data])
+       }
+
        reset()
     }
     return(

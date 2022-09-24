@@ -17,8 +17,9 @@ const getComments = () =>{
     return axiosService.get('comments')
 }
 
+
 const getPosts = () =>{
-    return axiosService.get('posts')
+    return axiosService.get('/posts')
 }
 
 

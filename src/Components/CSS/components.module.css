@@ -28,7 +28,7 @@
 }
 
 .element{
-
+transition: ease-in-out 0.2s;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,6 +38,9 @@
     background: deepskyblue;
     width: 40%;
     height: 200px;
+}
 
 
+.element:hover{
+    scale: 105%;
 }

@@ -1,4 +1,4 @@
-
+import css from "../../CSS/components.module.css"
 
 export default function Post(props) {
 
@@ -8,7 +8,7 @@ export default function Post(props) {
 
 
     return (
-        <div>
+        <div className={css.element}>
             <h4>{id} title:{title}</h4>
             <p>{body}</p>
         </div>)

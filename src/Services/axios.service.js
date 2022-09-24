@@ -14,7 +14,7 @@ const getAlbums = () =>{
 }
 
 const getComments = () =>{
-    return axiosService.get('comments')
+    return axiosService.get('/comments')
 }
 
 

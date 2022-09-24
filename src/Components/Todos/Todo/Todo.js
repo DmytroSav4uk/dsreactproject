@@ -1,10 +1,12 @@
+import css from "../../CSS/components.module.css"
+
 export default function Todo(props) {
 
     const {title, completed} = props
 
     if (completed === true) {
         return (
-            <div>
+            <div className={css.element}>
                 <h4>title:{title}</h4>
                 <p>completed:{' YES'}</p>
             </div>)
@@ -13,7 +15,7 @@ export default function Todo(props) {
     else {
 
         return (
-            <div>
+            <div className={css.element}>
                 <h4>title:{title}</h4>
                 <p>completed:{' NO'}</p>
             </div>)

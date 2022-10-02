@@ -1,9 +1,11 @@
-import Dogs from "./Components/Dogs";
+import Cats from "./Components/Cats/Cats";
+import Dogs from "./Components/Dogs/Dogs";
 
 function App() {
     return (
-        <div >
-<Dogs/>
+        <div>
+            <Cats/>
+            <Dogs></Dogs>
         </div>)
 }
 

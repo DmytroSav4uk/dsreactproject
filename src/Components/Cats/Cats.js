@@ -3,7 +3,6 @@ import {CREATE, DELETE} from "../../Reducers/actions";
 import {useRef,useState} from "react";
 import {Cat} from "./Cat";
 
-
 export default function Cats() {
 
 
@@ -30,7 +29,7 @@ export default function Cats() {
 
 
     return(
-        <div>
+        <div className>
             <p> Cats</p>
             <input type="text"   value={value} onChange={handleChange} ref={catName} />
             <button disabled={!value} onClick={createCat}>Add</button>

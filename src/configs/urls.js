@@ -6,5 +6,4 @@ const urls = {
     posts:"/posts"
 }
 
-
 export {baseURL, urls};

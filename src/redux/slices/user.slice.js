@@ -1,5 +1,5 @@
 import {createSlice} from "@reduxjs/toolkit";
-import {userService} from "../../services";
+
 
 
 const initialState = {
@@ -21,7 +21,7 @@ const userSlice = createSlice({
     }
 });
 
-const {reducer: userReducer, action: {getAll}} = userSlice;
+const {reducer: userReducer, actions: {getAll}} = userSlice;
 
 const userActions = {
     getAll

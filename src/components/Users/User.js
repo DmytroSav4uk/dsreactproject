@@ -23,9 +23,6 @@ const User = ({user}) => {
                 <button onClick={() => dispatch(userActions.deleteById(id))}>Delete</button>
                 </div>
             </div>
-
-
-
     )
 }
 

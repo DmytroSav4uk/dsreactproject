@@ -4,6 +4,7 @@ import {useEffect} from "react";
 // import {userService} from "../../services";
 import {userActions} from "../../redux";
 import {User} from "./User";
+import css from "../components.module.css"
 
 const Users = () =>{
 
@@ -19,7 +20,7 @@ useEffect(()=>{
 
 
     return(
-        <div>
+        <div className={css.elements}>
             {userFromAPI&&<h1>data from API: {userFromAPI.name}</h1>}
             {loading&&<h1>Loading........................</h1>}
             {error&&<h1>Error</h1> }

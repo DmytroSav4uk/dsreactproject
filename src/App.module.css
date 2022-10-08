@@ -1,28 +1,38 @@
+body{
+    margin: 0;
+    background: #515159;
+}
 
-.controller{
+.wrap{
     display: flex;
-    align-items: center;
-    background: deepskyblue;
-    position: fixed;
-    height: 100vh;
-    width: 100px;
-    font-size: 10px;
-    transition: ease-in-out 0.5s;
+    width: 100%;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header{
+
+    background: #3a3a3a;
+    height: 20px;
+    width: 50vw;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: ease-in-out 0.3s;
+    margin-bottom: 20px;
+}
+
+.header:hover{
+    font-size: 30px ;
+    height: 100px;
 }
 
 
-.controller:hover{
-    width: 250px;
-    font-size: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    background: #71d6ff;
-
-}
 
 
-.controller > ul{
-color: darkblue;
-    padding: 30px;
-}
+
+
+
 

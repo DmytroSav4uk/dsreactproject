@@ -3,7 +3,7 @@ import {useEffect} from "react";
 
 import {Post} from "./Post";
 import {postActions} from "../../redux/slices/post.slice";
-
+import css from "../components.module.css"
 
 const Posts = () =>{
 
@@ -15,7 +15,7 @@ useEffect(()=>{
 },[])
 
 return(
-    <div>
+    <div className={css.elements}>
         {postFromAPI&&<h1>data from API: {postFromAPI.title}</h1>}
         {loading&&<h1>Loading........................</h1>}
         {error&&<h1>Error</h1> }

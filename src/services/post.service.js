@@ -1,4 +1,5 @@
 import {urls} from "../configs";
+
 import {axiosService} from "./axios.service";
 
 const postService = {

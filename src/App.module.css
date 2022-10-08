@@ -1,9 +1,23 @@
-body{
+body {
+/*    background: linear-gradient(-45deg, #ffffff, #97b1ff, #58ffb3, #ffd300);*/
+/*    background-size: 400% 400%;*/
+/*    animation: gradient 15s ease infinite;*/
+/*    height: 100vh;*/
+ font-family: Calibri;
     margin: 0;
-    background: #515159;
-
 }
 
+/*@keyframes gradient {*/
+/*    0% {*/
+/*        background-position: 0% 50%;*/
+/*    }*/
+/*    50% {*/
+/*        background-position: 100% 50%;*/
+/*    }*/
+/*    100% {*/
+/*        background-position: 0% 50%;*/
+/*    }*/
+/*}*/
 .wrap{
     display: flex;
     width: 100%;
@@ -16,10 +30,9 @@ body{
 
 .header{
 
-    background: #3a3a3a;
+   border-bottom: 2px solid orange ;
     height: 20px;
     width: 50vw;
-
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     transition: ease-in-out 0.3s;
@@ -29,6 +42,8 @@ body{
 .header:hover{
     font-size: 30px ;
     height: 100px;
+    background: orange;
+    : 50%;
 }
 
 

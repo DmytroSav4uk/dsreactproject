@@ -7,7 +7,7 @@ const PostDetails = () => {
     const {onePost} = useSelector(state => state.postReducer)
     return(
 
-        <div className={css.details}>
+        <div className={`${css.details} ${css.biggerWidth}`}>
             <h4>{onePost&&onePost.title}</h4>
             <p>{onePost&&onePost.body}</p>
         </div>

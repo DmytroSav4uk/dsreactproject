@@ -11,8 +11,19 @@ a{
 }
 
 
+.home{
+
+    width: 100%;
+    text-align: center;
+    background: #7c7070;
+    display: block;
 
 
+}
+
+h1{
+    margin: 0;
+}
 
 
 .elements{
@@ -50,7 +61,7 @@ a{
 }
 
 .smallFont{
-    font-size: 70%;
+    font-size: 90%;
 }
 
 .element h4 {
@@ -86,9 +97,23 @@ a{
     margin: 0;
 }
 
+.biggerWidth{
+    width: 91%;
+}
 
+/*.elements::-webkit-scrollbar {*/
+/*    width: 12px;*/
+/*}*/
 
+/*.elements::-webkit-scrollbar-track {*/
+/*    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+/*    border-radius: 10px;*/
+/*}*/
 
+/*.elements::-webkit-scrollbar-thumb {*/
+/*    border-radius: 10px;*/
+/*    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);*/
+/*}*/
 
 
 

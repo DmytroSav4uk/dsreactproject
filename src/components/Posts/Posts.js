@@ -15,7 +15,7 @@ useEffect(()=>{
 },[])
 
 return(
-    <div className={css.elements}>
+    <div className={`${css.elements} ${css.biggerWidth}`}>
         {postFromAPI&&<h1>data from API: {postFromAPI.title}</h1>}
         {loading&&<h1>Loading........................</h1>}
         {error&&<h1>Error</h1> }

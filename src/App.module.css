@@ -1,6 +1,7 @@
 body{
     margin: 0;
     background: #515159;
+
 }
 
 .wrap{
@@ -10,6 +11,7 @@ body{
     position: sticky;
     top: 0;
     z-index: 999;
+
 }
 
 .header{

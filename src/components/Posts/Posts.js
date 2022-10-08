@@ -8,7 +8,7 @@ import {postActions} from "../../redux/slices/post.slice";
 const Posts = () =>{
 
 const dispatch = useDispatch();
-const {posts, error,} = useSelector(state =>state.postReducer);
+const {posts, error,loading,postFromAPI} = useSelector(state =>state.postReducer);
 
 useEffect(()=>{
     dispatch(postActions.getAll())
@@ -16,6 +16,9 @@ useEffect(()=>{
 
 return(
     <div>
+        {postFromAPI&&<h1>data from API: {postFromAPI.title}</h1>}
+        {loading&&<h1>Loading........................</h1>}
+        {error&&<h1>Error</h1> }
         {posts.map(post=><Post key={post.id} post={post}/> )}
     </div>
 )

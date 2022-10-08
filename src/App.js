@@ -1,9 +1,12 @@
 import {Header} from "./components/Header/Header"
 import {Users} from "./components/Users/Users";
 import {Posts} from "./components/Posts/Posts";
+import {UserDetails} from "./components/Users/UserDetails";
+import {PostDetails} from "./components/Posts/PostDeatails";
 
 import {Route, Routes} from "react-router-dom";
-import {UserDetails} from "./components/Users/UserDetails";
+
+
 
 function App() {
     return (
@@ -15,6 +18,7 @@ function App() {
             <div>
                 <Routes>
                     <Route path={'/users'} element={<UserDetails/>}/>
+                    <Route path={'/posts'} element={<PostDetails/>}/>
                 </Routes>
             </div>
 

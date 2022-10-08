@@ -1,5 +1,5 @@
-import {createSlice} from "@reduxjs/toolkit";
-
+import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
+import {userService} from "../../services";
 
 
 const initialState = {
@@ -9,6 +9,17 @@ const initialState = {
     error: null
 }
 
+const getAll = createAsyncThunk('userSlice/getAll',
+    async (_, {rejectWithValue}) => {
+        try {
+            const {data} = await userService.getAll()
+            return data;
+        } catch (e) {
+            return rejectWithValue(e.response.data)
+        }
+    }
+)
+
 
 const userSlice = createSlice({
 
@@ -17,14 +28,18 @@ const userSlice = createSlice({
     reducers: {
         getAll: (state, action) => {
             state.users = action.payload
+        },
+        getOne: (state, action) => {
+            state.oneUser = action.payload
         }
     }
 });
 
-const {reducer: userReducer, actions: {getAll}} = userSlice;
+const {reducer: userReducer, actions: {getAll, getOne}} = userSlice;
 
 const userActions = {
-    getAll
+    getAll,
+    getOne
 }
 
 

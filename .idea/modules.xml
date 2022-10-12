@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../dsreactproject.iml" filepath="$PROJECT_DIR$/../dsreactproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/dsreactproject.iml" filepath="$PROJECT_DIR$/.idea/dsreactproject.iml" />
     </modules>
   </component>
 </project>
